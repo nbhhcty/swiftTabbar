@@ -11,7 +11,8 @@ target '来客' do
   pod 'Kingfisher', '~> 4.10.0'
   pod "ESTabBarController-swift"
   pod 'pop', '~> 1.0.12'
-  
+#  pod 'PermissionScope'
+
   target '来客Tests' do
     inherit! :search_paths
     # Pods for testing

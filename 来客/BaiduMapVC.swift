@@ -1,8 +1,8 @@
 //
-//  BaiduMapViewController.swift
+//  BaiduMapVC.swift
 //  来客
 //
-//  Created by wsk on 2018/11/8.
+//  Created by wsk on 2018/11/10.
 //  Copyright © 2018年 wsk. All rights reserved.
 //
 
@@ -42,31 +42,36 @@ class MyAnnotation: BMKAnnotationView {
     }
 }
 
-extension BaiduMapViewController: BMKLocationManagerDelegate {
+extension BaiduMapVC: BMKLocationManagerDelegate {
     func bmkLocationManager(_ manager: BMKLocationManager, didUpdate location: BMKLocation?, orError error: Error?) {
         if let curLocation = location {
-            //            if p_mapView.annotations.contains(where: { (pointAnnotation) -> Bool in
-            //                return true
-            //            })
-            //self.addCustomOverlay(center: curLocation.location?.coordinate ?? CLLocationCoordinate2D.init(latitude: 0, longitude: 0))
-            pointAnnotation.coordinate = curLocation.location?.coordinate ?? CLLocationCoordinate2D.init(latitude: 0, longitude: 0)
+            let res = p_mapView.annotations.contains(where: { (inPointAnnotation) -> Bool in
+                return pointAnnotation.isEqual(inPointAnnotation)
+            })
+            if res {
+                return
+            }
+            let coordinateZero = CLLocationCoordinate2D.init(latitude: 0, longitude: 0)
+            // 添加圆圈
+            self.addCustomOverlay(center: curLocation.location?.coordinate ?? coordinateZero)
+            // 添加pointAnnotation
+            pointAnnotation.coordinate = curLocation.location?.coordinate ?? coordinateZero
             pointAnnotation.title = "1"
             p_mapView.addAnnotation(pointAnnotation)
-            p_mapView.setCenter(curLocation.location?.coordinate ?? CLLocationCoordinate2D.init(latitude: 0, longitude: 0), animated: true)
+            p_mapView.setCenter(curLocation.location?.coordinate ?? coordinateZero, animated: true)
         }
     }
 }
-extension BaiduMapViewController: BMKMapViewDelegate {
+extension BaiduMapVC: BMKMapViewDelegate {
     
 }
-class BaiduMapViewController: UIViewController {
-
+class BaiduMapVC: ViewController {
     @IBOutlet weak var p_mapView: BMKMapView!
     let locationService:BMKLocationManager = BMKLocationManager.init()
     let pointAnnotation:BMKPointAnnotation = BMKPointAnnotation.init()
     
     func baiduMapLocation() {
-        p_mapView.zoomLevel = 18
+        p_mapView.zoomLevel = 17
         p_mapView.showsUserLocation = true
         locationService.delegate = self
         locationService.distanceFilter = kCLDistanceFilterNone
@@ -76,7 +81,7 @@ class BaiduMapViewController: UIViewController {
     }
     func addCustomOverlay(center: CLLocationCoordinate2D) {
         //创建圆形覆盖物对象
-        let cirle:BMKCircle = BMKCircle.init(center: center, radius: 200)
+        let cirle:BMKCircle = BMKCircle.init(center: center, radius: 400)
         p_mapView.add(cirle)
     }
     

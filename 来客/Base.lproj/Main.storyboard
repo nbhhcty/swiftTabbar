@@ -13,18 +13,33 @@
         <!--Item 2-->
         <scene sceneID="7Wj-7a-ceR">
             <objects>
-                <viewController id="gqi-Jq-YLc" customClass="ViewController1" customModule="来客" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gqi-Jq-YLc" customClass="BaiduMapVC" customModule="来客" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u0J-ww-1TD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HU-xz-713" customClass="BMKMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QpE-io-tAJ" firstAttribute="bottom" secondItem="5HU-xz-713" secondAttribute="bottom" id="RVs-BQ-8vX"/>
+                            <constraint firstItem="QpE-io-tAJ" firstAttribute="trailing" secondItem="5HU-xz-713" secondAttribute="trailing" id="Ybf-gS-zb0"/>
+                            <constraint firstItem="5HU-xz-713" firstAttribute="leading" secondItem="QpE-io-tAJ" secondAttribute="leading" id="uJf-Sr-Ydp"/>
+                            <constraint firstItem="5HU-xz-713" firstAttribute="top" secondItem="QpE-io-tAJ" secondAttribute="top" id="yh9-mb-cwm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QpE-io-tAJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="PkY-yL-Gz7"/>
+                    <connections>
+                        <outlet property="p_mapView" destination="5HU-xz-713" id="gvk-x4-2AA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daw-6m-iDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1039" y="734"/>
+            <point key="canvasLocation" x="-286" y="744"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Y1r-Gg-5pC">
@@ -40,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GT-4D-AS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="734"/>
+            <point key="canvasLocation" x="-1132" y="754"/>
         </scene>
         <!--Item-->
         <scene sceneID="lJS-wJ-YEU">
@@ -69,7 +84,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8l1-jY-feG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="723"/>
+            <point key="canvasLocation" x="532" y="734"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="ctm-V6-oTF">
