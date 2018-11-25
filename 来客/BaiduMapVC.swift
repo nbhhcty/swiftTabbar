@@ -30,8 +30,8 @@ class CustomOverlayView: BMKOverlayGLBasicView {
 }
 class MyAnnotation: BMKAnnotationView {
     var p_image:UIImageView = UIImageView.init()
+    
     override init!(annotation: BMKAnnotation!, reuseIdentifier: String!) {
-        
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
         self.p_image.frame = self.frame
@@ -65,28 +65,6 @@ extension BaiduMapVC: BMKLocationManagerDelegate {
     }
 }
 extension BaiduMapVC: BMKMapViewDelegate {
-    
-}
-class BaiduMapVC: ViewController {
-    @IBOutlet weak var p_mapView: BMKMapView!
-    let locationService:BMKLocationManager = BMKLocationManager.init()
-    let pointAnnotation:BMKPointAnnotation = BMKPointAnnotation.init()
-    
-    func baiduMapLocation() {
-        p_mapView.zoomLevel = 17
-        p_mapView.showsUserLocation = true
-        locationService.delegate = self
-        locationService.distanceFilter = kCLDistanceFilterNone
-        locationService.desiredAccuracy = kCLLocationAccuracyBest
-        locationService.coordinateType = .BMK09LL
-        locationService.startUpdatingLocation()
-    }
-    func addCustomOverlay(center: CLLocationCoordinate2D) {
-        //创建圆形覆盖物对象
-        let cirle:BMKCircle = BMKCircle.init(center: center, radius: 400)
-        p_mapView.add(cirle)
-    }
-    
     // MARK: - BMKMapViewDelegate
     /**
      *根据overlay生成对应的View
@@ -108,6 +86,38 @@ class BaiduMapVC: ViewController {
             return circleView
         }
         return nil
+    }
+    func mapView(_ mapView: BMKMapView!, viewFor annotation: BMKAnnotation!) -> BMKAnnotationView! {
+        if annotation.isKind(of: BMKPointAnnotation.self) {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "MyAnnotation")
+            if (annotationView == nil) {
+                annotationView = BMKPinAnnotationView.init(annotation: annotation, reuseIdentifier: "MyAnnotation")
+            }
+            annotationView?.image = UIImage.init(named: "favor_1")
+            annotationView?.annotation = annotation
+            return annotationView
+        }
+        return BMKPinAnnotationView.init(annotation: annotation, reuseIdentifier: "MyAnnotation")
+    }
+}
+class BaiduMapVC: ViewController {
+    @IBOutlet weak var p_mapView: BMKMapView!
+    let locationService:BMKLocationManager = BMKLocationManager.init()
+    let pointAnnotation:BMKPointAnnotation = BMKPointAnnotation.init()
+
+    func baiduMapLocation() {
+        p_mapView.zoomLevel = 17
+        p_mapView.showsUserLocation = true
+        locationService.delegate = self
+        locationService.distanceFilter = kCLDistanceFilterNone
+        locationService.desiredAccuracy = kCLLocationAccuracyBest
+        locationService.coordinateType = .BMK09LL
+        locationService.startUpdatingLocation()
+    }
+    func addCustomOverlay(center: CLLocationCoordinate2D) {
+        //创建圆形覆盖物对象
+        let cirle:BMKCircle = BMKCircle.init(center: center, radius: 400)
+        p_mapView.add(cirle)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
