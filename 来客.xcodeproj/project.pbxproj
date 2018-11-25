@@ -15,16 +15,17 @@
 		7C0492CA218EE639009F7A61 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0492C9218EE639009F7A61 /* __Tests.swift */; };
 		7C0492D5218EE639009F7A61 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0492D4218EE639009F7A61 /* __UITests.swift */; };
 		7C1F8BF421947BD400C791DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F8BF321947BD400C791DD /* ViewController.m */; };
+		7C44DAA321AAE4250066E4A0 /* ESTabBarController_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44DAA221AAE4250066E4A0 /* ESTabBarController_swift.framework */; };
+		7C44DAA521AAE4250066E4A0 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44DAA421AAE4250066E4A0 /* EZSwiftExtensions.framework */; };
+		7C44DAA721AAE4250066E4A0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44DAA621AAE4250066E4A0 /* Kingfisher.framework */; };
+		7C44DAA921AAE4250066E4A0 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44DAA821AAE4250066E4A0 /* pop.framework */; };
+		7C44DAAB21AAE4250066E4A0 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44DAAA21AAE4250066E4A0 /* SwifterSwift.framework */; };
 		7CBDF3D8219722E60091917F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3D7219722E60091917F /* MainTabBarController.swift */; };
 		7CBDF3DA219724170091917F /* BaiduMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3D9219724170091917F /* BaiduMapVC.swift */; };
 		7CBDF3DC219724200091917F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3DB219724200091917F /* ViewController2.swift */; };
 		7CBDF3E0219726380091917F /* BasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3DF219726380091917F /* BasicContentView.swift */; };
 		7CBDF3E2219726880091917F /* BouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3E1219726880091917F /* BouncesContentView.swift */; };
 		7CBDF3E4219726DC0091917F /* IrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDF3E3219726DC0091917F /* IrregularityBasicContentView.swift */; };
-		7CF4A9C621A9803300620423 /* ESTabBarController_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4A9C521A9803300620423 /* ESTabBarController_swift.framework */; };
-		7CF4A9C821A9803300620423 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4A9C721A9803300620423 /* Kingfisher.framework */; };
-		7CF4A9CA21A9803300620423 /* PermissionScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4A9C921A9803300620423 /* PermissionScope.framework */; };
-		7CF4A9CC21A9803300620423 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4A9CB21A9803300620423 /* pop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +66,17 @@
 		7C1F8BF121947BD400C791DD /* 来客-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "来客-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C1F8BF221947BD400C791DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7C1F8BF321947BD400C791DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C44DAA221AAE4250066E4A0 /* ESTabBarController_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ESTabBarController_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44DAA421AAE4250066E4A0 /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EZSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44DAA621AAE4250066E4A0 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44DAA821AAE4250066E4A0 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44DAAA21AAE4250066E4A0 /* SwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBDF3D7219722E60091917F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7CBDF3D9219724170091917F /* BaiduMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiduMapVC.swift; sourceTree = "<group>"; };
 		7CBDF3DB219724200091917F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		7CBDF3DF219726380091917F /* BasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicContentView.swift; sourceTree = "<group>"; };
 		7CBDF3E1219726880091917F /* BouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncesContentView.swift; sourceTree = "<group>"; };
 		7CBDF3E3219726DC0091917F /* IrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularityBasicContentView.swift; sourceTree = "<group>"; };
-		7CF4A9C521A9803300620423 /* ESTabBarController_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ESTabBarController_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CF4A9C721A9803300620423 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CF4A9C921A9803300620423 /* PermissionScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PermissionScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CF4A9CB21A9803300620423 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08A9C905737FC05FE17817E /* Pods-来客Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-来客Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-来客Tests/Pods-来客Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A57CD94DB8634B70ACE802 /* Pods-来客.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-来客.debug.xcconfig"; path = "Pods/Target Support Files/Pods-来客/Pods-来客.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,10 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF4A9C621A9803300620423 /* ESTabBarController_swift.framework in Frameworks */,
-				7CF4A9C821A9803300620423 /* Kingfisher.framework in Frameworks */,
-				7CF4A9CA21A9803300620423 /* PermissionScope.framework in Frameworks */,
-				7CF4A9CC21A9803300620423 /* pop.framework in Frameworks */,
+				7C44DAA321AAE4250066E4A0 /* ESTabBarController_swift.framework in Frameworks */,
+				7C44DAA521AAE4250066E4A0 /* EZSwiftExtensions.framework in Frameworks */,
+				7C44DAA721AAE4250066E4A0 /* Kingfisher.framework in Frameworks */,
+				7C44DAA921AAE4250066E4A0 /* pop.framework in Frameworks */,
+				7C44DAAB21AAE4250066E4A0 /* SwifterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,10 +127,11 @@
 		40612421D6339E0E0AD601C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CF4A9C521A9803300620423 /* ESTabBarController_swift.framework */,
-				7CF4A9C721A9803300620423 /* Kingfisher.framework */,
-				7CF4A9C921A9803300620423 /* PermissionScope.framework */,
-				7CF4A9CB21A9803300620423 /* pop.framework */,
+				7C44DAA221AAE4250066E4A0 /* ESTabBarController_swift.framework */,
+				7C44DAA421AAE4250066E4A0 /* EZSwiftExtensions.framework */,
+				7C44DAA621AAE4250066E4A0 /* Kingfisher.framework */,
+				7C44DAA821AAE4250066E4A0 /* pop.framework */,
+				7C44DAAA21AAE4250066E4A0 /* SwifterSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -405,15 +409,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-来客/Pods-来客-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/PermissionScope/PermissionScope.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionScope.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

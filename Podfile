@@ -12,6 +12,8 @@ target '来客' do
   pod "ESTabBarController-swift"
   pod 'pop', '~> 1.0.12'
 #  pod 'PermissionScope'
+  pod 'SwifterSwift'
+  pod 'EZSwiftExtensions'
 
   target '来客Tests' do
     inherit! :search_paths

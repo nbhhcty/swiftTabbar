@@ -35,12 +35,12 @@ import UIKit
  *      2. var landscapeImagePhone: UIImage?
  *      3. var imageInsets: UIEdgeInsets
  *      4.  var landscapeImagePhoneInsets: UIEdgeInsets
- *      5. func setTitleTextAttributes(_ attributes: [String : Any]?, for state: UIControlState)
- *      6. func titleTextAttributes(for state: UIControlState) -> [String : Any]?
+ *      5. func setTitleTextAttributes(_ attributes: [String : Any]?, for state: UIControl.State)
+ *      6. func titleTextAttributes(for state: UIControl.State) -> [String : Any]?
  *  MARK: UITabBarItem properties
  *      7. var titlePositionAdjustment: UIOffset
- *      8. func setBadgeTextAttributes(_ textAttributes: [String : Any]?, for state: UIControlState)
- *      9. func badgeTextAttributes(for state: UIControlState) -> [String : Any]?
+ *      8. func setBadgeTextAttributes(_ textAttributes: [String : Any]?, for state: UIControl.State)
+ *      9. func badgeTextAttributes(for state: UIControl.State) -> [String : Any]?
  */
 @available(iOS 8.0, *)
 open class ESTabBarItem: UITabBarItem {

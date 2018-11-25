@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import EZSwiftExtensions
+
 class CustomOverlay: BMKPolyline {
     init(points: [BMKMapPoint]?, count: Int) {
         super.init()
@@ -100,7 +102,7 @@ class BaiduMapVC: ViewController {
         }
         if let curOverlay = overlay as? BMKCircle {
             let circleView:BMKCircleView = BMKCircleView.init(circle: curOverlay)
-            circleView.strokeColor = .red
+            circleView.strokeColor = UIColor.init(hexString: "808080", alpha: 0.7)
             circleView.lineWidth = 1
             circleView.fillColor = .clear
             return circleView
